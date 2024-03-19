@@ -16,7 +16,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-
 class ManagerLogin extends JFrame implements ActionListener, KeyListener{	//GUI 관리자 창
 	JPanel port_log = new JPanel();
 	JLabel port_label = new JLabel("입력을 허용할 포트번호를 입력하세요");

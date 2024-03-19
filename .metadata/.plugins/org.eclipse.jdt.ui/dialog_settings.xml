@@ -78,4 +78,23 @@
 			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 		</section>
 	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="D:\leemingyu\network"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="GUIClient - test23"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="D:\leemingyu\network\chatclient.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="D:\leemingyu\network\chatclient.jar"/>
+			<item value="D:\leemingyu\network\chatServer.jar"/>
+			<item value="D:\leemingyu\network\chat_client.jar"/>
+			<item value="D:\leemingyu\network\server_client.jar"/>
+			<item value="D:\leemingyu\network\Chat_client.jar"/>
+			<item value="D:\leemingyu\network\_jar.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="D:\leemingyu\network.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
 </section>

@@ -23,8 +23,9 @@ public class ServerBack extends Thread {
 	}
 	
 	public void startServer(int port) {
-		Collections.synchronizedList(clientList);
+		
 		try {
+			Collections.synchronizedList(clientList);
 			serverSocket = new ServerSocket(port);
 			System.out.println("현재 IP주소 : ["+InetAddress.getLocalHost()+"], "+"Port 번호 :["+port+"]");
 			
