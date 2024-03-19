@@ -1,5 +1,6 @@
 package sec1;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -9,33 +10,33 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-class LoginGUI extends JFrame implements ActionListener{
-	JPanel port_log = new JPanel();
-	JLabel port_label = new JLabel("유저입력");
-	JTextField port_num = new JTextField(20);
-	JLabel port_label1 = new JLabel("포트입력");
-	JTextField port_num1 = new JTextField(20);
-	JLabel port_label2 = new JLabel("주소입력");
-	JTextField port_num2 = new JTextField(20);
-	JButton port_btn = new JButton("접속!");
+class LoginGUI extends JFrame implements ActionListener {
+	JPanel Login_GUIPanel = new JPanel();
+	JTextField NickName_Text = new JTextField(20);
+	JTextField Port_Text = new JTextField("####", 20);
+	JTextField IPAddress_Text = new JTextField("###.###.###.###", 20);
+	JLabel NickName_Label = new JLabel("유저 입력");
+	JLabel Port_Label = new JLabel("포트 입력");
+	JLabel IPAddress_Label = new JLabel("주소 입력");
+	JButton Login_GUI_Button = new JButton("접속!");
 	
-	public LoginGUI() {	
+	public LoginGUI() {
 		setTitle("로그인 화면");
-		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(250, 250);
-		setVisible(true);
+		setLocationRelativeTo(null);
+		setSize(300, 260);
 		setResizable(false);
-		port_btn.addActionListener(this);	
-		
-		port_log.add(port_label);
-		port_log.add(port_num);
-		port_log.add(port_label1);
-		port_log.add(port_num1);
-		port_log.add(port_label2);
-		port_log.add(port_num2);
-		port_log.add(port_btn);
-		add(port_log);
+		setVisible(true);
+		Login_GUI_Button.setPreferredSize(new Dimension(260, 40));
+		Login_GUI_Button.addActionListener(this);
+		Login_GUIPanel.add(NickName_Label);
+		Login_GUIPanel.add(NickName_Text);
+		Login_GUIPanel.add(Port_Label);
+		Login_GUIPanel.add(Port_Text);
+		Login_GUIPanel.add(IPAddress_Label);
+		Login_GUIPanel.add(IPAddress_Text);
+		Login_GUIPanel.add(Login_GUI_Button);
+		add(Login_GUIPanel);
 	}
 
 	@Override
@@ -43,11 +44,7 @@ class LoginGUI extends JFrame implements ActionListener{
 		// TODO Auto-generated method stub
 		
 	}
-
-	
-	
 }
-
 public class GUIClient {
 	public static void main(String[] args) {
 		new LoginGUI();
