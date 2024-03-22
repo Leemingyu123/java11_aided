@@ -16,8 +16,8 @@ public class Test8Client {
 		Socket socket = null;
 		
 		try {
-			socket = new Socket("192.168.0.1", 8080);
-			if(socket == null) {
+			socket = new Socket("192.168.0.1", 8080);//서버의 ip주소가 다름127.0.0.1
+			if(socket == null) {// == -> !=
 				System.out.println("[Client]");
 				System.out.println("서버와 연결 성공!");
 				br = new BufferedReader(new InputStreamReader(socket.getInputStream()));

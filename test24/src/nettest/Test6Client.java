@@ -16,7 +16,7 @@ public class Test6Client {
 		Socket socket = null;
 		int port = 3000;
 		try {
-			socket = new Socket(port);
+			socket = new Socket(port); //클라이언트는 서버의 ip주소와 port다 들어가야함 
 			if(socket != null) {
 				System.out.println("[Client]");
 				System.out.println("서버와 연결 성공!");

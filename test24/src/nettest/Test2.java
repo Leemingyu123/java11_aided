@@ -1,6 +1,7 @@
 package nettest;
 
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class Test2 {
@@ -9,9 +10,9 @@ public class Test2 {
 		output1();
 	}
 	public static void output1() {
-		FileOutputStream fos = null;
+		FileWriter fos = null;
 		try {
-			fos = new FileOutputStream("test.txt");
+			fos = new FileWriter("test1.txt");
 			String str = "점심뭐먹어?";
 			for(int i = 0; i<str.length() ; i++) {
 				fos.write(str.charAt(i));
@@ -19,6 +20,12 @@ public class Test2 {
 		}catch(IOException e) {
 			e.printStackTrace();
 		
+		}finally {
+			try {
+				fos.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
