@@ -18,6 +18,10 @@ public class Test3 {
 			}
 		}catch(IOException e) {
 			e.printStackTrace();
+		}try {
+			fos.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 }
